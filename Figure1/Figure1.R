@@ -60,12 +60,12 @@ theme(axis.text=element_text(size=12),
 #h_pos = 	#cis eQTL cwithin a 250kb window of an association for the background trait (height)
 #fc = fold change
 #p = p-value (Fisher's exact)
-total_enrich <- read.table("Figure1Ca.txt", header = T)
+total_enrich <- read.table("Figure1Ca.data.txt", header = T)
 total_enrich$p.adj <- p.adjust(total_enrich$p, method = "fdr")
 
 #Read in cis eQTL (unique to NK cells):GWAS enrichment results (as estimated by coloc)
 #TABLE HEADERS: as for total_enrich
-unique_enrich <- read.table("Figure1Cb.txt", header = T)
+unique_enrich <- read.table("Figure1Cb.data.txt", header = T)
 unique_enrich$p.adj <- p.adjust(unique_enrich$p, method = "fdr")
 
 #Prepare data for facet plot
