@@ -369,6 +369,21 @@ FigureS6D <- ggplot(co.plot, aes(x=-log10(lymph.gwas.pval), y=-log10(eqtl.pval))
 #Construct FigureS6
 FigureS6 <- ((FigureS6A|FigureS6B)/(FigureS6C|FigureS6D))
 
+
+###Figure S7: NK cell specific Allele specific expression at MC1R.###
+#read in data
+ase.mc1r <- read.table("FigureS7.data.txt", header = T)
+ase.mc1r$Individual <- as.factor(ase.mc1r$Individual)
+ase.mc1r$rs2228479 <- relevel(ase.mc1r$rs2228479, ref = "T")
+
+#FigureS7
+FigureS7 <- ggplot(ase.mc1r, aes(fill=Individual, y=count, x=rs2228479)) + 
+  geom_bar(position="stack", stat="identity") +
+  scale_fill_manual(values = cols[c(1:9)]) + 
+  scale_colour_manual(values = cols[c(1:9)]) +
+  facet_grid(. ~ cell.rna.dna) +
+  theme_bw()
+  
 ###Figure S8: Study power.###
 #cis analysis - varying nTests according to the effective number of indepdendent SNPs per cis window.
 #e.g. 10 SNPs per window assumes 180,000 tests given 18,000 genes tested
