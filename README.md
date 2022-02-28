@@ -6,8 +6,10 @@ Natural Killer (NK) cells are innate lymphocytes with central roles in immunosur
 [Preprint](https://www.biorxiv.org/content/10.1101/2021.05.10.443088v1)
 
 **Overview of repository**
-* Figure folders: contains R script and source data to reproduce each main and supplementary Figure from the manuscript.
-* Weighted_GWAS: contains R script and example data to run weighted logistic regression association analysis across a 1000 SNP chunk on chromosome 1.
+* Figure folders (Figure1-4 & Supp_Figures): contains R script and source data to reproduce each main and supplementary Figure from the manuscript.
+* QTL_mapping: contains example code for the eQTL mapping pipeline in cis and trans.
+* colocalisation_examples: contains example code and data for colocalisation analysis with coloc (data: CD226 eQTL and inflammatory bowel disease colocalisation) and moloc (data: CD226 eQTL colocalisation across 5 immune cell subsets).
+* FUSION_TWAS: contains example code for computation of functional weights for NK eQTL mapping data () and TWAS analysis (). 
 
 ***eQTL mapping data***
 
