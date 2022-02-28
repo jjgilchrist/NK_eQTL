@@ -7,9 +7,9 @@ Natural Killer (NK) cells are innate lymphocytes with central roles in immunosur
 
 **Overview of repository**
 * Figure folders (Figure1-4 & Supp_Figures): contains R script and source data to reproduce each main and supplementary Figure from the manuscript.
-* QTL_mapping: contains example code for the eQTL mapping pipeline in cis and trans.
-* colocalisation_examples: contains example code and data for colocalisation analysis with coloc (data: CD226 eQTL and inflammatory bowel disease colocalisation) and moloc (data: CD226 eQTL colocalisation across 5 immune cell subsets).
-* FUSION_TWAS: contains example code for computation of functional weights for NK eQTL mapping data () and TWAS analysis (). 
+* QTL_mapping: contains example code for the eQTL mapping pipeline in cis and trans using QTLtools: [Olivier Delaneau, Halit Ongen, Andrew A. Brown, Alexandre Fort, Nikolaos I. Panousis & Emmanouil T. Dermitzakis. "A complete tool set for molecular QTL discovery and analysis." *Nature Communications.* 2017.](https://www.nature.com/articles/ncomms15452)
+* colocalisation_examples: contains example code and data for colocalisation analysis with coloc (data: CD226 eQTL and inflammatory bowel disease colocalisation) and moloc (data: CD226 eQTL colocalisation across 5 immune cell subsets). coloc: [Claudia Giambartolomei , Damjan Vukcevic, Eric E. Schadt, Lude Franke, Aroon D. Hingorani, Chris Wallace, Vincent Plagnol. "Bayesian Test for Colocalisation between Pairs of Genetic Association Studies Using Summary Statistics." *PLOS Genetics.* 2014.](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004383). moloc: [Claudia Giambartolomei, Jimmy Zhenli Liu, Wen Zhang, Mads Hauberg, Huwenbo Shi, James Boocock, Joe Pickrell, Andrew E Jaffe, The CommonMind Consortium, Bogdan Pasaniuc, and Panos Roussos. "A Bayesian framework for multiple trait colocalization from summary association statistics." *Bioinformatics.* 2018.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6061859/).
+* FUSION_TWAS: contains example code for computation of functional weights for NK eQTL mapping data (compute_weights.sh), GWAS summary statistic preparation (process_summ_stats.sh) and TWAS analysis (FUSION_TWAS.sh). FUSION: [Alexander Gusev, *et al*. "Integrative approaches for large-scale transcriptome-wide association studies." *Nature Genetics.* 2016.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4767558/)
 
 ***eQTL mapping data***
 
