@@ -5,6 +5,12 @@ Natural Killer (NK) cells are innate lymphocytes with central roles in immunosur
 
 [Preprint](https://www.biorxiv.org/content/10.1101/2021.05.10.443088v1)
 
+**Overview of repository**
+* Figure folders: contains R script and source data to reproduce each main and supplementary Figure from the manuscript.
+* Weighted_GWAS: contains R script and example data to run weighted logistic regression association analysis across a 1000 SNP chunk on chromosome 1.
+
+***eQTL mapping data***
+
 [cis mapping results Shiny app](https://jjgilchrist.shinyapps.io/nk_cis_eqtl/)
 
 [trans mapping results Shiny app](https://jjgilchrist.shinyapps.io/nk_trans_eqtl/)
